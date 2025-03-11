@@ -1,1 +1,1 @@
-# Arrays and String Documentation JS#
+# Arrays and String Documentation JS #
