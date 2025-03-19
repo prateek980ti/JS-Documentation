@@ -1,2 +1,13 @@
-const str1 = "My name is khan";
-console.log(str1.indexOf("khan"));
+const mood = "My name is khan";
+console.log(mood.indexOf("khan"));
+
+const y = "khan";
+
+
+let arr = mood.split(""); 
+for (let i in arr) {
+    if (mood.substring(i, parseInt(i) + y.length) === y) {
+        console.log(i);
+        break; 
+    } 
+}
