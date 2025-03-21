@@ -15,6 +15,11 @@ sss = (arr,x,y)=>{
         result.push(arr[i]);
     }
     console.log(result);
+    return result;
 }
 
 sss(arr,2,-1);
+sss(arr,2,3);
+
+
+module.exports=sss;

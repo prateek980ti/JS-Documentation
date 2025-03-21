@@ -5,7 +5,7 @@ const mood = "I am very happy because I am rich.";
 ul=( string)=>{
 
     let result2 = ""
-    for (let x of mood) {
+    for (let x of string) {
         
         // console.log(x);
         if(x.charCodeAt(0) >= 97 && x.charCodeAt(0) <= 122){
@@ -17,6 +17,10 @@ ul=( string)=>{
         }
     }
     console.log(result2);
+    return result2;
 }
 
 ul(mood);
+
+
+module.exports=ul

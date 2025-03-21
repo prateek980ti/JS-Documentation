@@ -14,3 +14,6 @@ sq= (arr, string)=>{
 
 console.log(sq(beasts, "malu"));
 console.log(sq(beasts, "malku"));
+
+
+module.exports = sq;

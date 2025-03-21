@@ -9,6 +9,9 @@ const l = (x)=>{
         count++;
     }
     console.log(count);
+    return count;
 }
 
 l(x);
+
+module.exports=l

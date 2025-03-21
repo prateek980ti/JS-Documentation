@@ -21,3 +21,7 @@ sq= (arr, func)=>{
 }
 
 console.log(sq(arr, ffff));
+
+
+module.exports = sq;
+

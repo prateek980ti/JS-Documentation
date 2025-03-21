@@ -11,6 +11,9 @@ vof=(x)=>{
     }
     
     console.log(result);
+    return result;
 }
 
 vof(x);
+
+module.exports= vof

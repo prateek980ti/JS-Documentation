@@ -9,6 +9,7 @@ iof=(string, y)=>{
     for (let i in arr) {
         if (mood.substring(i, parseInt(i) + y.length) === y) {
             console.log(i);
+            return parseInt(i);
             break; 
         } 
     }
@@ -16,3 +17,5 @@ iof=(string, y)=>{
 }
 
 iof(mood, y);
+
+module.exports = iof

@@ -10,9 +10,13 @@ const att=(index)=>{
     for(let i=0;i<array.length;i++){
         if(i==index){
             console.log(array[i]);
+            return array[i];
         }
     }
 }
 
 
 att(index);
+att(2);
+
+module.exports=att;

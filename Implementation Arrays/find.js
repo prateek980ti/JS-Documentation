@@ -18,3 +18,6 @@ sq= (arr, func)=>{
 
 console.log(sq(arr, ffff));
 // console.log(sq(arr2, square));
+
+
+module.exports = sq;

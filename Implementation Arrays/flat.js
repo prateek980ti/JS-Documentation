@@ -19,5 +19,7 @@ const flatten=(arr)=>{
 // flatten(arr);
 
 console.log(flatten(arr));
+// console.log(arr);
 
-    // console.log(arr);
+
+module.exports = flatten;

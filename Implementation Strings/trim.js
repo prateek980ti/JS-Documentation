@@ -16,7 +16,10 @@ trimmm=(string)=>{
         }
     }
     console.log(arr.join(" "));
+    return arr.join(" ");
 }
 
 
 trimmm(mood);
+
+module.exports = trimmm

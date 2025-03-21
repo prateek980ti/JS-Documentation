@@ -1,6 +1,6 @@
 const mood = "I am very happy because I am rich.";
 // let x = mood.slice(5);
-console.log(mood.slice(5,15));
+// console.log(mood.slice(5,15));
 // console.log(x); 
 
 
@@ -33,9 +33,13 @@ const sliceee = (string, start, end = string.length) => {
         result += string[i];
     }
     console.log(result);
+    return result ;
 };
 
 
 sliceee(mood, x, y);
 sliceee(mood, -50, -1);
 sliceee(mood,-13);
+
+
+module.exports = sliceee

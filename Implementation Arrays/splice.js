@@ -26,9 +26,14 @@ const spliceee=(arr,start, del, ...items)=>{
         arr.push(i);
     }
 
+    return newarr;
+
 }
 
 
 
 spliceee(arr2,-1,3,"prateek", "gfd","gsfdgfds", "dsds");
 console.log(arr2);
+
+
+module.exports = spliceee;

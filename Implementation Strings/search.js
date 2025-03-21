@@ -10,10 +10,14 @@ srch=(string, find)=>{
     for (let i in arr) {
         if (string.substring(i, parseInt(i) + find.length) === find) {
             console.log(i);
+            return parseInt(i);
             break; 
         } 
     }
 }
 
 srch(mood,y);
+
+
+module.exports= srch
     

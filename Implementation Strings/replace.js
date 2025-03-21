@@ -17,6 +17,10 @@ replacee = (str,str1,str2) => {
     
     let sentence = arr.join(" ");
     console.log(sentence); 
+    return sentence;
 }
 
 replacee(mood, a , b);
+
+
+module.exports = replacee

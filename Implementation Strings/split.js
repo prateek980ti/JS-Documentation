@@ -23,3 +23,6 @@ const spplit = (string, operator = " ") =>{
 };
 
 console.log(spplit(mood, " "));
+
+
+module.exports = spplit

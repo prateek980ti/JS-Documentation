@@ -10,9 +10,12 @@ liof=(string, y)=>{
     for (let i=arr.length-1; i>=0; i--) {
         if (mood.substring(i, parseInt(i) + y.length) === y) {
             console.log(i);
+            return parseInt(i);
             break; 
         } 
     }
     
 }
 liof(mood, y);
+
+module.exports = liof

@@ -22,11 +22,15 @@ ew =(str1,str2)=>{
     }
     
     if(flag == 1){
-        console.log("true");
+        // console.log("true");
+        return true;
     }
     else{
-        console.log("false");
+        // console.log("false");
+        return false;
     }
 }
 
-ew(str1,str2);
+
+module.exports = ew
+console.log(ew(str1,str2));

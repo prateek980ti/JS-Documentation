@@ -11,5 +11,9 @@ mapp=(arr,func)=>{
         arr[i]=func(arr[i]);
     }    
     console.log(arr);
+    return arr;
 }
 mapp(array1,dble);
+
+
+module.exports = mapp;

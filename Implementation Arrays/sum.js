@@ -19,7 +19,11 @@ som = (arr, func)=>{
         }
     }
     console.log((flag>0)?true:false);
+    return (flag>0)?true:false;
 }
 
 som(arr, some);
 som(arr2, some);
+
+
+module.exports = som;

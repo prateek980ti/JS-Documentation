@@ -1,6 +1,6 @@
 const array1 = [1, 2, 3];
 
-console.log(array1.includes(2));
+// console.log(array1.includes(2));
 
 
 
@@ -16,3 +16,6 @@ sq= (arr, int)=>{
 
 console.log(sq(array1, 2));
 console.log(sq(array1, 10));
+
+
+module.exports = sq;

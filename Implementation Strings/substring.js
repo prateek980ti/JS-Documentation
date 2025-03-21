@@ -22,6 +22,10 @@ const sstr=(string,x,y)=>{
         result+=arr[i];
     }
     console.log(result);
+    return result ;
 }
 
 sstr(mood,x,y);
+
+
+module.exports = sstr

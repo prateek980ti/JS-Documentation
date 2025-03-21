@@ -1,4 +1,4 @@
-const mood = "I am very happy becAuse I am rich.";
+const mood = "HELLO DOSTO ji";
 // console.log(mood.toLowerCase());
 
 lower=(string)=>{
@@ -19,7 +19,11 @@ lower=(string)=>{
         // console.log(result);
     }
     console.log(result2);
+    return result2;
     // console.log(mood);
 }
 
 lower(mood);
+
+
+module.exports = lower

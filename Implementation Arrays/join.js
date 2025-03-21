@@ -12,3 +12,6 @@ sq= (arr)=>{
 }
 
 console.log(sq(beasts));
+
+
+module.exports = sq;

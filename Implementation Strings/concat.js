@@ -13,8 +13,11 @@ const concattt=(y,...str)=>{
             x=x+y;
         }
     }
-    console.log(x.valueOf());
+    // console.log(x.valueOf());
+    return x.valueOf();
 }
 
-concattt(" ","hello","dost", "mere");
-concattt("*","hello","dost", "mere");
+// concattt(" ","hello","dost", "mere");
+// concattt("*","hello","dost", "mere");
+
+module.exports = concattt

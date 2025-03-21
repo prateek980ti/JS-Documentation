@@ -1,4 +1,4 @@
-const mood = "      I am very happy because I am     rich.          ";
+const mood = "      I am very happy because I am     rich.";
 
 console.log(mood.trimStart());
 
@@ -15,6 +15,9 @@ tt=(string)=>{
         
     }
     console.log(arr.join(" "));
+    return arr.join(" ");
 }
 
 tt(mood);
+
+module.exports = tt

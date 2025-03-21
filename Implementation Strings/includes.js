@@ -13,6 +13,9 @@ includeWord = (str, x) =>{
         }
     }
     console.log(flag >= 1 ? "true" : "false");
+    return (flag >= 1 ? true : false);
 }
     
 includeWord(str1, x);
+
+module.exports = includeWord
