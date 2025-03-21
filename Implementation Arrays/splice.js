@@ -1,10 +1,13 @@
 const arr= ["a", "b", "c", "d", "e", "f", "g", "h"];
-arr.splice(1,3,"prateek", "gfd","gsfdgfds", "dsds");
+const arr2= ["a", "b", "c", "d", "e", "f", "g", "h"];
+arr.splice(-1,3,"prateek", "gfd","gsfdgfds", "dsds");
 console.log(arr);
 
 
-const spliceee=(arr,start, deleteCount, ...items)=>{
+const spliceee=(arr,start, del, ...items)=>{
     let newarr=[];
+
+    if(start<0){start=arr.length+start;}
     for(let i=0;i<start;i++){
         newarr.push(arr[i]);
     }
@@ -13,7 +16,7 @@ const spliceee=(arr,start, deleteCount, ...items)=>{
         newarr.push(i);
     }
 
-    for(let i=start+deleteCount;i<arr.length;i++){
+    for(let i=start+del;i<arr.length;i++){
         newarr.push(arr[i]);
     }
 
@@ -27,5 +30,5 @@ const spliceee=(arr,start, deleteCount, ...items)=>{
 
 
 
-// spliceee(arr,-1,3,"prateek", "gfd","gsfdgfds", "dsds");
-console.log(arr);
+spliceee(arr2,-1,3,"prateek", "gfd","gsfdgfds", "dsds");
+console.log(arr2);

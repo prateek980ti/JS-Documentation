@@ -1,16 +1,20 @@
-let x = "";
 const str1 = "Hello";
 const str2 = "Dost";
 
-console.log(str1.concat(" ", str2));
-console.log(str1.concat("*", str2));
+// console.log(str1.concat(" ", str2));
+// console.log(str1.concat("*", str2));
 
 
-for(let a of str1){
-    x = x + a;
+const concattt=(y,...str)=>{
+    let x = "";
+    for(let i of str){
+        x=x+i;
+        if(i!=str[str.length-1]){
+            x=x+y;
+        }
+    }
+    console.log(x.valueOf());
 }
-for(let a of str2){
-    x = x + a;
-}
 
-console.log(x.valueOf());
+concattt(" ","hello","dost", "mere");
+concattt("*","hello","dost", "mere");

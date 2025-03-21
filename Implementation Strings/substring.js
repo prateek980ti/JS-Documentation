@@ -4,9 +4,24 @@ console.log(mood.substring(1,10));
 
 let x=1;
 let y = 10;
-let result = "";
-let arr = mood.split("");
-for(let i = x;i<y;i++){
-    result+=arr[i];
+
+const sstr=(string,x,y)=>{
+    
+    let result = "";
+    let arr = string.split("");
+
+    let len = arr.length;
+    if (x < 0) x = len + x;
+    if (y < 0) y = len + y;
+
+    x = Math.max(0, x);
+    y = Math.min(len, y);
+
+
+    for(let i = x;i<y;i++){
+        result+=arr[i];
+    }
+    console.log(result);
 }
-console.log(result);
+
+sstr(mood,x,y);
